@@ -96,16 +96,25 @@ Supports analysis of page views and website visitor behavior for funnel optimiza
 
 ```text
 .
-├── dim_campaign.ktr
-├── dim_date.ktr
-├── dim_device.ktr
-├── dim_product.ktr
-├── fact_order.ktr
-├── fact_pageviews.ktr
-├── dm_ecommerce_sales.ktr
-├── dm_marketing_campaign.ktr
-├── dm_page_view.ktr
-└── dwh_maven_job.kjb
+├── dimensions/
+│   ├── dim_campaign.ktr
+│   ├── dim_date.ktr
+│   ├── dim_device.ktr
+│   └── dim_product.ktr
+│
+├── facts/
+│   ├── fact_order.ktr
+│   └── fact_pageviews.ktr
+│
+├── data_marts/
+│   ├── dm_ecommerce_sales.ktr
+│   ├── dm_marketing_campaign.ktr
+│   └── dm_page_view.ktr
+│
+├── jobs/
+│   └── dwh_maven_job.kjb
+│
+└── README.md
 ```
 
 ## Skills Demonstrated
